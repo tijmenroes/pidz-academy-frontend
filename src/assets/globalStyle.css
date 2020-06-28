@@ -1,0 +1,55 @@
+.v-application {
+    font-family: 'Lato', sans-serif;
+}
+h1, h2, h3 {
+    color: #1B538E;
+    /*TODO: make this into scss variables */
+}
+h2 {
+    padding-bottom: 10px;
+}
+
+.v-main__wrap {
+    background: #F3FBFE;
+}
+
+.v-rating .v-icon {
+    padding: 0.2rem;
+}
+
+.v-carousel__controls {
+    background: none;
+    height: 150px;
+}
+.v-carousel__controls .v-carousel__controls__item {
+    color:blue !important;
+    opacity:0.8;
+    /* primary color */
+}
+
+.v-card__title {
+    word-break: normal;
+}
+/* tabs for viewCourse */
+.tabContent p {
+    font-size: 18px;
+}
+
+.omschrijving {
+    color: #1B538E;
+}
+.leren {
+    background: #EEF0F0;
+    }
+.leren h2, .leren p {
+    color: #142936;
+    opacity: 0.8;
+
+}
+.benodigheden {
+    background: #FEEEED;
+    color: #F9574E  !important;
+}
+.benodigheden h2, .benodigheden p {
+    color: #F9574E  !important;
+}
