@@ -45,7 +45,7 @@ export default {
     };
   },
   created() {
-    this.$http.get("http://localhost:3000/articles/").then((response) => {
+    this.$http.get(process.env.VUE_APP_API + "/articles/").then((response) => {
       this.data = response.data;
       this.$store.state.loading = false;
       this.JustInData = this.data.slice(3)

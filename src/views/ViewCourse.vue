@@ -149,7 +149,7 @@ export default {
   },
   created() {
     this.$http
-      .get("http://localhost:3000/courses/" + this.$route.params.id)
+      .get(process.env.VUE_APP_API +"/courses/" + this.$route.params.id)
       .then((response) => {
         this.data = response.data;
         this.breadcrumbs.push({ text: response.data.theme, href: "/#" });

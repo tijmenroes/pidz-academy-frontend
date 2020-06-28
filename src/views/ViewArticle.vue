@@ -79,7 +79,7 @@ export default {
   },
   created() {
     this.$http
-      .get("http://localhost:3000/articles/" + this.$route.params.id)
+      .get(process.env.VUE_APP_API + "/articles/" + this.$route.params.id)
       .then((response) => {
         this.data = response.data.article;
         this.related = response.data.related;

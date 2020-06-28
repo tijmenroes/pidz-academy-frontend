@@ -53,7 +53,7 @@ export default {
     source: String,
   },
   created() {
-    this.$http.get('http://localhost:3000/overview/').then((response) => {
+    this.$http.get(process.env.VUE_APP_API + '/overview/').then((response) => {
       this.continueCourseData = response.data.progress;
       this.trendingCourseData = response.data.trending;
       this.$store.state.loading = false;

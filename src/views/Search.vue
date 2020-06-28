@@ -77,7 +77,7 @@ export default {
       this.data = [];
 
       this.$http
-        .get("http://localhost:3000/search/" + this.$route.query.search)
+        .get(process.env.VUE_APP_API + "/search/" + this.$route.query.search)
         .then((response) => {
           console.log(response.data);
           this.data = response.data;

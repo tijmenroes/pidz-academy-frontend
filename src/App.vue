@@ -27,7 +27,7 @@ export default {
     $route() {
       this.$store.state.loading = true;
     },
-  },
+  }, 
 };
 </script>
 
