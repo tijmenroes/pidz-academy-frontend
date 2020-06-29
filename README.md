@@ -1,5 +1,3 @@
-# pidz-academy-frontend
-Project for school, PIDZ academy frontend
 
 ## Hoe te gebruiken
 #### Installeren 
@@ -7,10 +5,7 @@ Project for school, PIDZ academy frontend
 
 Dit installeert alle bijbehorende libraries.
 
-### Setup
 
-Rename **.env.example** naar **.env**. Stel de API in als dat nodig is.
->VUE_APP_API=<API_HIER>
 
 ### Starten
 

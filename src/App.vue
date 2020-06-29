@@ -1,6 +1,6 @@
 <template>
   <v-app id="inspire">
-    <NavBar></NavBar>
+    <NavBar v-if="$route.path !== '/'"></NavBar>
     <v-main>
       <div v-if="$store.state.loading" class="text-center">
         <div class="text-center loading">
@@ -24,7 +24,8 @@ export default {
     NavBar,
   },
   watch: {
-    $route() {
+    $route(val) {
+      console.log(val)
       this.$store.state.loading = true;
     },
   }, 

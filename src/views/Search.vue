@@ -31,7 +31,7 @@
       </v-col>
       <v-col cols="12" md="8" v-if="!noRecords">
         <h3>Zoekresultaten voor {{ $route.query.search }}</h3>
-        <div v-for="(item, i) in data" :key="i">
+        <v-card v-for="(item, i) in data" class="mb-5" :key="i">
           <v-row>
             <v-col cols="3">
               <v-img :src="item.image"></v-img>
@@ -42,8 +42,7 @@
               </h3>
             </v-col>
           </v-row>
-          <v-divider />
-        </div>
+        </v-card>
         <div></div>
       </v-col>
       <v-col v-else>

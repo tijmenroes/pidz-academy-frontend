@@ -2,7 +2,7 @@
   <div>
     <v-container fluid>
       <v-card v-if="!$store.state.loading">
-        <v-breadcrumbs large :items="breadcrumbs"></v-breadcrumbs>
+        <v-breadcrumbs large :items="breadcrumbs" class="offset-md-1"></v-breadcrumbs>
         <v-row>
           <v-col cols="12" sm="4" class="offset-md-1 order-xs-1">
             <v-container>
@@ -21,7 +21,7 @@
           <v-col sm="6" cols="12" class="order-sm-0 order-sm-0 order-first">
             <v-img :src="data.image" contain height="500px"></v-img>
           </v-col>
-
+        <!--Section where all the course information is in a short way -->
           <v-col sm="8" xs="12" class="offset-sm-2">
             <v-card class="midsection">
             
@@ -52,7 +52,7 @@
             </v-card>
           </v-col>
         </v-row>
-
+<!-- Tabs that decide what gets shown-->
         <v-row class="tabContainer mx-0 ">
           <v-col sm="8" class="offset-sm-2 pb-0">
             <v-row>
@@ -143,6 +143,7 @@ export default {
         },
         { title: "In deze cursus ga je dit en dit leren", class: "leren" },
         { title: "Voor deze cursus heb je dit nodig", class: "benodigheden" },
+        { title: "Dit is de cursist!", class: "omschrijving" },
       ],
       data: null,
     };

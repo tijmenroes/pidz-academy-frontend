@@ -101,7 +101,7 @@ export default {
     {"title": "Thuiszorgers krijgen nu nog meer te maken met corona crisis, dit komt omdat...", "id":3},
     {"title": "Thuiszorgers krijgen nu nog meer te maken met corona crisis, dit komt omdat...", "id": 4},
     ]},
-    {"theme": "Poep", "content": 
+    {"theme": "Thuiszorg", "content": 
      [{"title": "Thuiszorgers krijgen nu nog meer te maken met corona crisis, dit komt omdat...", "id": 5},
     {"title": "Thuiszorgers krijgen nu nog meer te maken met corona crisis, dit komt omdat...", "id": 6},
     {"title": "Thuiszorgers krijgen nu nog meer te maken met corona crisis, dit komt omdat...", "id": 7},
@@ -109,13 +109,13 @@ export default {
     ]}],
     InPerson: [
       {
-        title: "Leren dat doede zo",
+        title: "Dit is hoe je omgaat met ouderen!",
         day: 12,
         month: "Juni",
         desc: "in deze cursus ga je leren hoe je dit en dat doet"
       },
       {
-        title: "Leren dat doede zo",
+        title: "Zo moet dat nou, omgaan met ouderen!",
         day: 12,
         month: "Juni",
         desc: "in deze cursus ga je leren hoe je dit en dat doet"

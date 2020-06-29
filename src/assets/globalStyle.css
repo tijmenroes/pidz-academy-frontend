@@ -26,7 +26,16 @@ h2 {
     opacity:0.8;
     /* primary color */
 }
-
+.v-btn:not(.v-btn--round).v-size--default {
+    font-weight:bold;
+}
+.cardContainer .v-card__title {
+    background: #1B538E;
+    color:white !important;
+}
+.cardContainer .v-card__title h2, .cardContainer .v-card__title h3  {
+    color:white;
+}
 .v-card__title {
     word-break: normal;
 }

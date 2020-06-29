@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h2 class="offset-md-1">Ga verder met.. </h2>
     <v-row align="baseline" justify="center">
       <v-col sm="1" class="d-none d-sm-flex">
         <v-icon size="50px" color="primary" v-if="model > 0" @click="model--">

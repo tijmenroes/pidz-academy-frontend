@@ -6,7 +6,7 @@
           <v-img
             class="mx-auto"
             contain
-            src="https://marente.nl/img/responsive/page/images/Thuiszorg.jpg"
+            src="https://www.ontdekdeouderenzorg.nl/uploads/intro_widget/ontwikkelingen_in-de-ouderenzorg-wzw.png"
           >
           </v-img>
         </v-col>

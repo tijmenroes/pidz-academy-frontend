@@ -93,9 +93,9 @@ export default {
     ],
     items: [
       {
-        icon: "mdi-view-dashboard-variant",
-        text: "Overzicht",
-        path: "/overview",
+        icon: "mdi-home",
+        text: "Home",
+        path: "/home",
       },
       {
         icon: "mdi-school-outline",
