@@ -114,17 +114,12 @@
       </v-card>
     </v-container>
     <v-container>
-      <!--<viewCourseMobile></viewCourseMobile>-->
     </v-container>
   </div>
 </template>
 
 <script>
-// import viewCourseMobile from "./ViewCourseMobile.vue";
 export default {
-  components: {
-    // viewCourseMobile,
-  },
   data() {
     return {
       tabIndex: null,

@@ -25,7 +25,6 @@ export default {
   },
   watch: {
     $route(val) {
-      console.log(val)
       this.$store.state.loading = true;
     },
   }, 

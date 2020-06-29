@@ -81,6 +81,7 @@ export default {
     },
     prettifyDate(date) {
       date = new Date(date);
+      //turn date in readable format
       var day = date.getDate();
       var month = date.getMonth();
       var year = date.getFullYear();

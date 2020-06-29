@@ -89,7 +89,6 @@ export default {
       this.data = data.sort(function(a, b) {
         return a.theme - b.theme;
       });
-      console.log(this.data);
     },
     onResize() {
       this.size = this.$vuetify.breakpoint.name;

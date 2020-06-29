@@ -53,16 +53,17 @@ export default {
     source: String,
   },
   created() {
+    //get data
     this.$http.get(process.env.VUE_APP_API + '/overview/').then((response) => {
       this.continueCourseData = response.data.progress;
       this.trendingCourseData = response.data.trending;
       this.$store.state.loading = false;
     })
-    console.log(this.$vuetify.breakpoint.name);
     this.onResize();
     window.addEventListener("resize", this.onResize, { passive: false });
   },
   watch: {
+    //set size for the carrousels
     size(size) {
       var amount;
       switch (size) {
@@ -88,6 +89,7 @@ export default {
   },
   methods: {
     onResize() {
+      //when window resizes, check the size again
       this.size = this.$vuetify.breakpoint.name;
     },
   },
@@ -127,6 +129,3 @@ export default {
 };
 </script>
 
-<style scoped>
-
-</style>

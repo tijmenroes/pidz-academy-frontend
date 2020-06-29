@@ -20,7 +20,7 @@
       </v-list>
     </div>
     <v-list v-else>
-      <v-list >
+      <v-list>
         <v-list-item
           v-for="(article, i) in articles"
           :key="i"
@@ -39,6 +39,7 @@
 
 <script>
 export default {
+  //Articles is the data, home is whether it's on homepage or not
   props: ["articles", "home"],
 };
 </script>

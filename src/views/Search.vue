@@ -78,7 +78,6 @@ export default {
       this.$http
         .get(process.env.VUE_APP_API + "/search/" + this.$route.query.search)
         .then((response) => {
-          console.log(response.data);
           this.data = response.data;
           this.$store.state.loading = false;
         });
@@ -89,9 +88,11 @@ export default {
   },
   watch: {
     $route() {
+      //when searching and you are already on the route, fetch data again
       this.fetchData();
     },
     data(val) {
+      //when search returns no results
       if (val.found === false) {
         this.noRecords = true;
       } else {

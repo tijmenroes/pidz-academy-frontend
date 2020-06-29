@@ -96,19 +96,14 @@ export default {
   },
   methods: {
     leftSwipe() {
-      console.log(this.model)
-      console.log(this.amount)
+      //function when user swipes left on the carrousel
       if(this.model < this.amount) {
-        // this/
-        console.log('doing');
         this.model++
       }
-      console.log(this.model)
       console.log('left')
     },
     rightSwipe(){
       if (this.model > 0) {
-        console.log('doing');
         this.model--;
       }
       console.log('right')
@@ -134,6 +129,7 @@ export default {
   },
   computed: {
     sheets() {
+      //amount of v-sheets in the carrousel
       return Math.round(this.data.length / this.amount);
     },
     position() {
@@ -144,9 +140,6 @@ export default {
     }
   },
   created() {
-    console.log("hi");
-    console.log(this.cols);
-    console.log(this.data.length)
     this.setData();
   },
 };
